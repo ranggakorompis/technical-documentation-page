@@ -5,22 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Technical Documentation Page | FCC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>JavaScript Technical Documentation Page | FCC</title>
 </head>
 <body>
     <!-- fcc test -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!-- navbar -->
-    <nav id="nav-bar"></nav>
+    <nav id="navbar">
+    <header class="nav-title">JavaScript Documentation</header>
+        <div id="link-box">
+            <a href="#JavaScript_Introduction" class="nav-link">JavaScript Introduction</a>
+            <a href="#JavaScript_Statements" class="nav-link">JavaScript Statements</a>
+            <a href="#JavaScript_Syntax" class="nav-link">JavaScript Syntax</a>
+            <a href="#JavaScript_Comments" class="nav-link">JavaScript Comments</a>
+            <a href="#JavaScript_Variables" class="nav-link">JavaScript Variables</a>
+        </div>
+    </nav>
+    <!-- </header> -->
 
     <!-- main -->
     <main id="main-doc">
-        <section id="main-section"></section>
-        <section id="main-section"></section>
-        <section id="main-section"></section>
-        <section id="main-section"></section>
-        <section id="main-section"></section>
+        <section class="main-section" id="JavaScript_Introduction">
+            <header>JavaScript Introduction</header>
+            <article>
+                <p>JavaScript is the world's most popular programming language, JavaScript is the programming language of the Web, JavaScript is easy to learn.</p>
+                <p>JavaScript is a programming language that conforms to the <a href="">ECMAScript</a> specification. JavaScript is a high-level, often just-in-time compiled, and multi-paradigm. it has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                <h3>History</h3>
+                <p>In September 1995, a <a href="">Netscape</a> programmer named <a href="">Brandan Eich</a> developed a new scripting language in just 10 days. It was originally named Mocha, but quickly became known as <a href="">LiveScript</a> and, later, JavaScript</p>
+                <h3>Why Study JavaScript?</h3>
+                <p>JavaScript is one of the 3 language all web developers must learn:</p>
+                <ol>
+                    <li><a href="">HTML</a> to define the content of web pages</li>
+                    <li><a href="">CSS</a> to specify the layout of web pages</li>
+                    <li><a href="">JavaScript</a> to program the behavior of web pages</li>
+                </ol>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_Statements">
+            <header>JavaScript Statements</header>
+            <article>
+                <h3>JavaScript Programs</h3>
+                <p>A <a href="">computer program</a> is a list of "instructions" to be "executed" by a computer.</p>
+                <p>In a programming language, these programming instructions are called statements.</p>
+                <p>A JavaScript program is a list of programming statements.</p>
+                <h3>JavaScript Statements</h3>
+                <p>JavaScript Statements are composed of:</p>
+                <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+                <p>This Statement tells the browser to write "Hello World" inside an HTML element with id="demo":</p>
+                <pre><code>document.getElementById("demo").innerHTML = "Hello Dolly.";</code></pre>
+                <h4>Example:</h4>
+                <pre><code>var x, y, z;  //Statement 1</code></pre>
+                <pre><code>x = 5;        //Statement 2</code></pre>
+                <pre><code>y = 6;        //Statement 3</code></pre>
+                <pre><code>z = x + y;    //Statement 4</code></pre>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_Syntax">
+            <header>JavaScript Syntax</header>
+            <article>
+                <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</p>
+                <pre><code>var x, y, z;   // Declare Variables</code></pre>
+                <pre><code>x = 5; y = 6;  // Assign Values    </code></pre>
+                <pre><code>z = z + y;     // Compute Values   </code></pre>
+                <h3>JavaScript Values</h3>
+                <p>The JavaScript syntax defines two types of values:</p>
+                <ul>
+                    <li>Fixed values</li>
+                    <li>Variables values</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_Comments">
+            <header>JavaScript Comments</header>
+        </section>
+        <section class="main-section" id="JavaScript_Variables">
+            <header>JavaScript Variables</header>
+        </section>
     </main>
 </body>
 </html>

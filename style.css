@@ -1,8 +1,12 @@
 /* basic style */
 :root {
+  /* color */
   --bg-color: #e4efe7;
+  --bg-color-thin: #c0c9c2;
   --font-color: rgb(17, 17, 17);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
   margin: 0;
@@ -12,4 +16,82 @@
 
 body {
   color: var(--font-color);
+  font-family: "Roboto", sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* header */
+header {
+  font-size: 1.5rem;
+}
+
+/* navbar */
+#navbar {
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+
+#link-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.nav-title {
+  font-weight: 300;
+  text-align: center;
+}
+
+.nav-link {
+  padding: 5px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  width: 100%;
+  background-color: var(--bg-color-thin);
+}
+
+/* main */
+#main-doc {
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
+#main-doc a {
+  text-decoration: underline;
+}
+
+#main-doc article {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 1.6;
+}
+
+#main-doc pre {
+  margin: 5px auto;
+}
+
+#main-doc code {
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+
+#main-doc ol,
+#main-doc ul {
+  padding-left: 30px;
+}
+
+/* responsive breakpoints */
+@media screen and (min-width: 815px) {
+  body {
+    display: flex;
+  }
 }
