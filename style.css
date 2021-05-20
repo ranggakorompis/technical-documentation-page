@@ -1,0 +1,15 @@
+/* basic style */
+:root {
+  --bg-color: #e4efe7;
+  --font-color: rgb(17, 17, 17);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--font-color);
+}
