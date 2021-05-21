@@ -32,6 +32,7 @@ header {
 
 /* navbar */
 #navbar {
+  width: 100%;
   background-color: var(--bg-color);
   padding: 10px;
 }
@@ -39,12 +40,12 @@ header {
 #link-box {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
 }
 
 .nav-title {
   font-weight: 300;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .nav-link {
@@ -89,9 +90,40 @@ header {
   padding-left: 30px;
 }
 
+/* footer */
+#footer {
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+#footer a:hover {
+  color: dodgerblue;
+}
+
 /* responsive breakpoints */
+@media screen and (max-width: 815px) {
+  /* navbar */
+  #link-box {
+    height: 250px;
+    overflow: auto;
+  }
+}
+
 @media screen and (min-width: 815px) {
   body {
     display: flex;
+  }
+
+  /* navbar */
+  #navbar {
+    width: 30%;
+  }
+
+  #link-box {
+    position: sticky;
+    top: 0;
   }
 }
