@@ -107,8 +107,8 @@ header {
 @media screen and (max-width: 815px) {
   /* navbar */
   #link-box {
-    height: 250px;
-    overflow: auto;
+    /* height: 250px;
+    overflow: auto; */
   }
 }
 
